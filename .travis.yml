@@ -1,6 +1,8 @@
 language: python
 cache: pip
 install:
+  - apt-get build-dep python-pygame
+  - apt-get install python-dev
   - pip install pygame
 python:
   - "2.6"
