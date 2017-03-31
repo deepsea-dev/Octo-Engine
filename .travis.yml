@@ -2,11 +2,13 @@ language: python
 cache: pip
 os:
   - linux
-  - sudo: required
+    sudo: required
+  - osx
+    sudo: required
 install:
   - export AUDIODEV=null
-  - sudo apt-get build-dep python-pygame
-  - sudo apt-get install python-dev
+  - apt-get build-dep python-pygame
+  - apt-get install python-dev
   - pip install pygame
 python:
   - "2.6"
