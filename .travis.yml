@@ -1,11 +1,9 @@
 language: python
 cache: pip
-matrix:
-  include:
-    - linux
-      sudo: required
-    - osx
-      sudo: required
+
+os:
+  - osx
+  - sudo: required
 install:
   - export AUDIODEV=null
   - apt-get build-dep python-pygame
