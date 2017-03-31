@@ -2,7 +2,7 @@ language: python
 cache: pip
 
 os:
-  - osx
+  - linux
   - sudo: required
 install:
   - export AUDIODEV=null
