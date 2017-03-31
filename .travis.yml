@@ -4,6 +4,7 @@ os:
   - linux
   - sudo: required
 install:
+  - export AUDIODEV=null
   - sudo apt-get build-dep python-pygame
   - sudo apt-get install python-dev
   - pip install pygame
