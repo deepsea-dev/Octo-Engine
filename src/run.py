@@ -79,6 +79,10 @@ class Main(object):
                     print("Clearing screen")
                     
                 self.entity_handler.entities = []
+                
+            if instruction.startswith("SystemExit"):
+                print("Exiting")
+                raise SystemExit
         
     def run_loop(self):
         self.level_thread = Thread(target=self.process_level, args=(True,))
