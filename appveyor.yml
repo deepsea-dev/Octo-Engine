@@ -62,13 +62,13 @@ install:
   # - "powershell appveyor\\install.ps1"
   - "set HOME=%APPVEYOR_BUILD_FOLDER%"
   - "%PYTHON%/python -m pip install -U pip"  # Upgrade pip
-  - "%WITH_COMPILER% %PYTHON%/python config.py -auto"
-  - "%WITH_COMPILER% %PYTHON%/python setup.py build"
-  - "%WITH_COMPILER% %PYTHON%/python setup.py -setuptools %DISTRIBUTIONS%"
-  - ps: "ls dist"
+  #- "%WITH_COMPILER% %PYTHON%/python config.py -auto"
+  #- "%WITH_COMPILER% %PYTHON%/python setup.py build"
+  #- "%WITH_COMPILER% %PYTHON%/python setup.py -setuptools %DISTRIBUTIONS%"
+  #- ps: "ls dist"
 
   # Install the wheel to test it
-  - "%PYTHON%/python -m pip install --ignore-installed --pre --no-index --find-links dist/ pygame"
+  #- "%PYTHON%/python -m pip install --ignore-installed --pre --no-index --find-links dist/ pygame"
 
 # Appveyor's build step is specific to .NET projects, so we build in the
 # install step instead.
@@ -76,14 +76,6 @@ build: off
 
 # Testing script for pygame branch
 test_script:
-  - "mkdir empty_folder"
-  - "cd empty_folder"
-  - "%PYTHON%/python -m pygame.tests --exclude opengl"
-
-  # Move back to the project folder
-  - "cd .."
-  
-  # Testing Main Project
   - "cd src"
   - "python run.py"
 
