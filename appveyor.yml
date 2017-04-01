@@ -59,7 +59,7 @@ init:
 
 # Commands run in command line
 install:
-  - "powershell appveyor\\install.ps1"
+  # - "powershell appveyor\\install.ps1"
   - "set HOME=%APPVEYOR_BUILD_FOLDER%"
   - "%PYTHON%/python -m pip install -U pip"  # Upgrade pip
   - "%WITH_COMPILER% %PYTHON%/python config.py -auto"
