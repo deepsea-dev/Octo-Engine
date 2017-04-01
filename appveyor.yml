@@ -9,7 +9,7 @@ branches:
     - gh-pages
     
 skip_commits:
-  message: ""
+  message: \[AV\-Skip\]
   
 environment:
 
