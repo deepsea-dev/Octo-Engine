@@ -1,8 +1,0 @@
-entity:create type:image id:0 {"x": 450, "y": 150, "scale": 100, "ref": "resources/images/octopus.png"}
-entity:create type:image id:1 {"x": 300, "y": 600, "scale": 100, "ref": "resources/images/BWBellairs_logo.png", "options": ["fade-in:duration-5"]}
-sleep 1 entity:behavior_add id:0 shake
-entity:create type:text id:2 {"x": 475, "y": 400, "text": "Start", "font": "Arial", "size": 100, "options": ["colour-fade:duration-30|colour-(0,0,0)"]}
-#entity:create type:sound id:3 {"ref": "resources/audio/intro.ogg"}
-sleep 5 entity:behavior_add id:2 shake
-sleep 4 clear:all
-entity:create type:player id:4 {"x": 300, "y": 400, "ref": "resources/images/player.png"}
