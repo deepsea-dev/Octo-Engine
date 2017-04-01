@@ -6,3 +6,4 @@ entity:create type:text id:2 {"x": 475, "y": 400, "text": "Start", "font": "Aria
 sleep 5 entity:behavior_add id:2 shake
 sleep 4 clear:all
 entity:create type:player id:4 {"x": 300, "y": 400, "ref": "resources/images/player.png"}
+SystemExit
