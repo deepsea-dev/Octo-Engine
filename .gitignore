@@ -1,7 +1,0 @@
-# Editor Configuration files
-.project
-.pydevproject
-
-# Python Files
-.pyc
-/__pycache__
